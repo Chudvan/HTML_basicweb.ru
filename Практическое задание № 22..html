@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Практическое задание 22</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Оформление заказа</legend>
+				<p><b>Введите контактные данные и адрес доставки:</b></p>
+				Контактное лицо: <input type="text" placeholder="Введите имя и фамилию" name="face"> Ваш адрес: <input type="text" placeholder="Введите ваш адрес" name="address"><br><br>
+				Телефон:  <input type="tel" placeholder="Введите ваш телефон" name="tel"> E-mail: <input type="email" placeholder="ваш e-mail" name="email">
+				<p><b>Выберите дату и время доставки:</b></p>
+				Дата доставки: <input type="date" name="date"> Время доставки: <input type="time" name="time">
+				<p><b>Оплата:</b></p>
+				<label><input type="radio" name="pay" value="pay1">Наличными </label><label><input type="radio"  name="pay" value="pay2" checked>По карте</label>
+				<p><b>Прочие параметры:</b></p>
+				<label><input type="checkbox" name="ch1" value="dom">Домофон </label>
+				<label><input type="checkbox" name="ch1" value="nzvonok">Неисправен звонок </label>
+				<label><input type="checkbox" name="ch2" value="dog">Собака во дворе </label>
+				<label><input type="checkbox" name="ch3" value="back">Вход с заднего фасада </label>
+				<label><input type="checkbox" name="ch4" value="ront">Вход с торца здания</label><br><br>
+				<input type="submit" name="submit" value="подтвердить">
+			</fieldset>
+		</form>
+	</body>
+</html>

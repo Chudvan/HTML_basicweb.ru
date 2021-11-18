@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Практическое задание 23</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Размещение вакансии</legend>
+				<p><b>Тип вакансии: </b> <label><input type="radio" name="vacancy" value="vacO" checked>Открытая</label><label><input type="radio" name="vacancy" value="vacC">Закрытая</label></p>
+				<b>Название вакансии: </b> <input type="text" name="prof" placeholder="Введите название вакансии">
+				<p><b>Профессиональная область: </b>
+				<select name="field">
+					<optgroup label="Банки, инвестиции, лизинг">
+						<option value=""></option>
+						<option value="valute">Валютный контроль</option>
+						<option value="credit">Кредиты</option>
+						<option value="bez" disabled>Безопаснось</option>
+					</optgroup>
+					<optgroup label="Административный персонал">
+						<option value="archive">Архивист</option>
+						<option value="driver">Водитель</option>
+						<option value="vsec" disabled>Вечерний секретарь</option>
+					</optgroup>
+					<optgroup label="Высший менеджмент" disabled>
+						<option value="director">Директор</option>
+						<option value="gbuh">Главный бухгалтер</option>
+
+					</optgroup>
+				</select></p>
+				<b>Предпологаемый уровень дохода: </b> <input type="number" name="profit" placeholder="уровень дохода">
+				<select>
+					<option value="RUB">RUB</option>
+					<option value="USD">USD</option>
+					<option value="EUR">EUR</option>
+				</select>
+				<p><b>О вакансии:</b></p>
+				<textarea name="info" placeholder="Введите информацию о вакансии" rows="1" cols="65"></textarea><br>
+				<input type="submit" name="submitinfo" value="Разместить">
+			</fieldset>
+		</form>
+	</body>
+</html>
